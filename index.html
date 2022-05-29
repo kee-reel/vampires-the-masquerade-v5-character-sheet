@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VtM V5 Character Sheet</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    /* Some custom styles to beautify this example */
+    body {
+        color: #fff;
+        background-color: #000;
+    }
+    div {
+        background: #333340;
+    }
+    .dots {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .dots input {
+        background-color: #000;
+    }
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+
+        border: 2px solid #999;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 5px;
+
+        position: relative;
+    }
+
+    input:checked {
+        background-color: red;
+        border: 8px solid red;
+    }
+
+    .important-text {
+        color: #f00;
+    }
+</style>
+</head>
+<body>
+    <p>Все изменения, производимые на странице, сохраняются в самой ссылке - если хочешь сохранить изменения, то просто сохрани эту ссылку где-то или не закрывай страницу.</p>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 class="text-center mt-3" id="attributes">Атрибуты</h1>
+                <p>Возьми:</p>
+                <ul>
+                    <li>один атрибут на 4 точки</li>
+                    <li>три атрибута на 3 точки</li>
+                    <li>четыре атрибута на 2 точки</li>
+                    <li>один атрибут на 1 точку</li>
+                </ul>
+                <p>Все точки сверх этого покупаются за опыт.</p>
+            </div>
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h4 class="text-center mt-3">Физические</h3></div>
+                <div class="col-xl-12 dots"> <p>Сила</p> </div>
+                <div class="col-xl-12 dots"> <p>Ловкость</p> </div>
+                <div class="col-xl-12 dots"> <p>Выносливость</p> </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h3 class="text-center mt-3">Социальные</h3></div>
+                <div class="col-xl-12 dots"> <p>Харизма</p> </div>
+                <div class="col-xl-12 dots"> <p>Манипуляция</p> </div>
+                <div class="col-xl-12 dots"> <p>Самообладание</p> </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h3 class="text-center mt-3">Ментальные</h3></div>
+                <div class="col-xl-12 dots"> <p>Интеллект</p> </div>
+                <div class="col-xl-12 dots"> <p>Смекалка</p> </div>
+                <div class="col-xl-12 dots"> <p>Решительность</p> </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="text-center mt-3" id="skills">Навыки</h1>
+            <div class="col-xl-12"> <p>Есть три способа распределить навыки:</p> </div>
+            <div class="col-xl-12"> <ul>
+                <li>"мастер на все руки": один навык на 3; восемь на 2; десять на 1</li>
+                <li>"сбалансированный: три навыка на 3; пять на 2; семь на 1</li>
+                <li>"специалист: один навык на 4; три на 3; три на 2; три на 1</li>
+            </ul> </div>
+            <div class="col-xl-12"> <p>Все точки сверх этого покупаются за опыт.</p> </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h3 class="text-center mt-3">Физические</h3></div>
+                <div class="col-xl-12 dots"   <p>Атлетика</p> </div>
+                <div class="col-xl-12 dots">       <p>Драка</p> </div>
+                <div class="col-xl-12 dots">       <p>Ремесло</p> </div>
+                <div class="col-xl-12 dots">       <p>Вождение</p> </div>
+                <div class="col-xl-12 dots">    <p>Стрельба</p> </div>
+                <div class="col-xl-12 dots">       <p>Холодное оружие</p> </div>
+                <div class="col-xl-12 dots">     <p>Воровство</p> </div>
+                <div class="col-xl-12 dots">     <p>Скрытность</p> </div>
+                <div class="col-xl-12 dots">    <p>Выживание</p> </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h3 class="text-center mt-3">Социальные</h3></div>
+                <div class="col-xl-12 dots">  <p>Обращение с животными</p> </div>
+                <div class="col-xl-12 dots">   <p>Этикет</p> </div>
+                <div class="col-xl-12 dots">     <p>Проницательность</p> </div>
+                <div class="col-xl-12 dots"><p>Запугивание</p> </div>
+                <div class="col-xl-12 dots">  <p>Лидерство</p> </div>
+                <div class="col-xl-12 dots"> <p>Выступление</p> </div>
+                <div class="col-xl-12 dots">  <p>Убеждение</p> </div>
+                <div class="col-xl-12 dots">  <p>Знание улиц</p> </div>
+                <div class="col-xl-12 dots">  <p>Хитрость</p> </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="col-xl-12"><h3 class="text-center mt-3">Ментальные</h3></div>
+                <div class="col-xl-12 dots">   <p>Гуманитарные науки</p> </div>
+                <div class="col-xl-12 dots">   <p>Бдительность</p> </div>
+                <div class="col-xl-12 dots">   <p>Финансы</p> </div>
+                <div class="col-xl-12 dots">   <p>Расследование</p> </div>
+                <div class="col-xl-12 dots">   <p>Медицина</p> </div>
+                <div class="col-xl-12 dots">   <p>Оккультизм</p> </div>
+                <div class="col-xl-12 dots">   <p>Политика</p> </div>
+                <div class="col-xl-12 dots">   <p>Естественные науки</p> </div>
+                <div class="col-xl-12 dots">   <p>Технологии</p> </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="text-center mt-3" id="disciplines">Дисциплины</h1>
+            <div class="col-xl-12">
+                <p>Выбери две клановых дисциплины (в зависимости от своего клана): для одной из них присвой две точки, а для другой - одну точку.</p>
+                <p>При создании нового персонажа внеклановые дисциплины лучше не выбирать (рассчёт очков для них тут не поддержан). Все точки клановых дисциплин кроме озвученных, покупаются за опыт.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="col-xl-12 dots">     <p>Анимализм</p> </div>
+                <div class="col-xl-12 dots">    <p>Ясновидение</p> </div>
+                <div class="col-xl-12 dots">    <p>Стремительность</p> </div>
+                <div class="col-xl-12 dots">    <p>Доминирование</p> </div>
+                <div class="col-xl-12 dots">    <p>Стойкость</p> </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="col-xl-12 dots">    <p>Затемнение</p> </div>
+                <div class="col-xl-12 dots">    <p>Мощь</p> </div>
+                <div class="col-xl-12 dots">    <p>Присутствие</p> </div>
+                <div class="col-xl-12 dots">    <p>Превращение</p> </div>
+                <div class="col-xl-12 dots">    <p>Магия крови</p> </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var state = [];
+        const prepared_sums = [0, 1, 3, 6, 10, 15];
+
+        function update_count(id_, modifier, start, stop, shift, base) {
+            const attributes = document.getElementById(id_);
+            var sum = 0;
+            for(var i = start; i <= stop; i++) {
+                sum += prepared_sums[state[i]-shift] * modifier;
+            }
+            sum = sum > base ? (sum - base) : 0;
+            var data = attributes.innerHTML.split(': ');
+            attributes.innerHTML = `${data[0]}: ${sum} опыта вложено`
+        }
+
+        function update_state() {
+            update_count('attributes', 5, 0, 8, 1, 95);
+            update_count('skills', 3, 9, 35, 0, 114);
+            update_count('disciplines', 5, 36, 45, 0, 20);
+            window.history.replaceState({}, "", `index.html?${state.join('')}`);
+        }
+
+        const dots = document.getElementsByClassName("dots");
+        var preloaded_state = window.location.href.split('?')[1];
+        if(preloaded_state && preloaded_state.length == dots.length) {
+            state = preloaded_state.split('');
+        } else {
+            for(var i = 0; i < 9; i++) {
+                state[i] = 1;
+            }
+            for(var i = 9; i < dots.length; i++) {
+                state[i] = 0;
+            }
+        }
+
+        for(var i = 0; i < dots.length; i++) {
+            var d = dots[i];
+            d.id = i;
+            var div = document.createElement("div");
+            d.value = 0;
+            var cur_state = state[i];
+            for(var j = 1; j <= 5; j++) {
+                var input = document.createElement("input");
+                input.type = "radio";
+                input.value = j;
+                input.checked = j <= cur_state;
+                input.addEventListener("click", function(event) {
+                    var prev_value = this.parentNode.parentNode.value;
+                    var new_value = this.value == prev_value && this.parentNode.parentNode.id > 8 ? 0 : this.value;
+                    this.parentNode.parentNode.value = new_value;
+                    state[this.parentNode.parentNode.id] = new_value;
+                    var dots = this.parentNode.childNodes;
+                    for(var i = 0; i < 5; i++) {
+                        var node = dots[i];
+                        node.checked = node.value <= new_value;
+                    }
+                    update_state();
+                }, true);
+                div.appendChild(input);
+            }
+            d.appendChild(div);
+        }
+        update_state();
+    </script>
+</body>
+</html>

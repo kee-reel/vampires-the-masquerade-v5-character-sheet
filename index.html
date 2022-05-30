@@ -28,15 +28,18 @@
         margin: 0 !important;
         padding: 0 !important;
     }
-    .dots input {
-        background-color: #000;
+    .round-dots input {
+        border-radius: 50%;
+    }
+    .square-dots input {
+        border-radius: 0%;
     }
     input {
+        background-color: #000;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
 
-        border-radius: 50%;
         width: 16px;
         height: 16px;
 
@@ -75,22 +78,34 @@
             </div>
             <div class="col-xl-4">
                 <div class="col-xl-12"><h4 class="text-center mt-3">Физические</h3></div>
-                <div class="col-xl-12 dots"> <p>Сила</p> </div>
-                <div class="col-xl-12 dots"> <p>Ловкость</p> </div>
-                <div class="col-xl-12 dots"> <p>Выносливость</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Сила</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Ловкость</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Выносливость</p> </div>
             </div>
             <div class="col-xl-4">
                 <div class="col-xl-12"><h3 class="text-center mt-3">Социальные</h3></div>
-                <div class="col-xl-12 dots"> <p>Харизма</p> </div>
-                <div class="col-xl-12 dots"> <p>Манипуляция</p> </div>
-                <div class="col-xl-12 dots"> <p>Самообладание</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Харизма</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Манипуляция</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Самообладание</p> </div>
             </div>
             <div class="col-xl-4">
                 <div class="col-xl-12"><h3 class="text-center mt-3">Ментальные</h3></div>
-                <div class="col-xl-12 dots"> <p>Интеллект</p> </div>
-                <div class="col-xl-12 dots"> <p>Смекалка</p> </div>
-                <div class="col-xl-12 dots"> <p>Решительность</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Интеллект</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Смекалка</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Решительность</p> </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12"><h3 class="text-center mt-3">Параметры</h3></div>
+            <div class="col-xl-12">
+            <p>Параметры высчитваются автоматически по формулам:</p>
+                <ul>
+                    <li>Здоровье = Выносливость + 3</li>
+                    <li>Сила воли = Самообладание + Решительность</li>
+                </ul>
+            </div>
+            <div class="col-xl-6 dots square-dots" id="health"> <p>Здоровье</p> </div>
+            <div class="col-xl-6 dots square-dots" id="willpower"> <p>Сила воли</p> </div>
         </div>
         <div class="row">
             <h1 class="text-center mt-3" id="skills">Навыки</h1>
@@ -106,39 +121,39 @@
         <div class="row">
             <div class="col-xl-4">
                 <div class="col-xl-12"><h3 class="text-center mt-3">Физические</h3></div>
-                <div class="col-xl-12 dots"   <p>Атлетика</p> </div>
-                <div class="col-xl-12 dots">       <p>Драка</p> </div>
-                <div class="col-xl-12 dots">       <p>Ремесло</p> </div>
-                <div class="col-xl-12 dots">       <p>Вождение</p> </div>
-                <div class="col-xl-12 dots">    <p>Стрельба</p> </div>
-                <div class="col-xl-12 dots">       <p>Холодное оружие</p> </div>
-                <div class="col-xl-12 dots">     <p>Воровство</p> </div>
-                <div class="col-xl-12 dots">     <p>Скрытность</p> </div>
-                <div class="col-xl-12 dots">    <p>Выживание</p> </div>
+                <div class="col-xl-12 dots round-dots"   <p>Атлетика</p> </div>
+                <div class="col-xl-12 dots round-dots">       <p>Драка</p> </div>
+                <div class="col-xl-12 dots round-dots">       <p>Ремесло</p> </div>
+                <div class="col-xl-12 dots round-dots">       <p>Вождение</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Стрельба</p> </div>
+                <div class="col-xl-12 dots round-dots">       <p>Холодное оружие</p> </div>
+                <div class="col-xl-12 dots round-dots">     <p>Воровство</p> </div>
+                <div class="col-xl-12 dots round-dots">     <p>Скрытность</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Выживание</p> </div>
             </div>
             <div class="col-xl-4">
                 <div class="col-xl-12"><h3 class="text-center mt-3">Социальные</h3></div>
-                <div class="col-xl-12 dots">  <p>Обращение с животными</p> </div>
-                <div class="col-xl-12 dots">   <p>Этикет</p> </div>
-                <div class="col-xl-12 dots">     <p>Проницательность</p> </div>
-                <div class="col-xl-12 dots"><p>Запугивание</p> </div>
-                <div class="col-xl-12 dots">  <p>Лидерство</p> </div>
-                <div class="col-xl-12 dots"> <p>Выступление</p> </div>
-                <div class="col-xl-12 dots">  <p>Убеждение</p> </div>
-                <div class="col-xl-12 dots">  <p>Знание улиц</p> </div>
-                <div class="col-xl-12 dots">  <p>Хитрость</p> </div>
+                <div class="col-xl-12 dots round-dots">  <p>Обращение с животными</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Этикет</p> </div>
+                <div class="col-xl-12 dots round-dots">     <p>Проницательность</p> </div>
+                <div class="col-xl-12 dots round-dots"><p>Запугивание</p> </div>
+                <div class="col-xl-12 dots round-dots">  <p>Лидерство</p> </div>
+                <div class="col-xl-12 dots round-dots"> <p>Выступление</p> </div>
+                <div class="col-xl-12 dots round-dots">  <p>Убеждение</p> </div>
+                <div class="col-xl-12 dots round-dots">  <p>Знание улиц</p> </div>
+                <div class="col-xl-12 dots round-dots">  <p>Хитрость</p> </div>
             </div>
             <div class="col-xl-4">
                 <div class="col-xl-12"><h3 class="text-center mt-3">Ментальные</h3></div>
-                <div class="col-xl-12 dots">   <p>Гуманитарные науки</p> </div>
-                <div class="col-xl-12 dots">   <p>Бдительность</p> </div>
-                <div class="col-xl-12 dots">   <p>Финансы</p> </div>
-                <div class="col-xl-12 dots">   <p>Расследование</p> </div>
-                <div class="col-xl-12 dots">   <p>Медицина</p> </div>
-                <div class="col-xl-12 dots">   <p>Оккультизм</p> </div>
-                <div class="col-xl-12 dots">   <p>Политика</p> </div>
-                <div class="col-xl-12 dots">   <p>Естественные науки</p> </div>
-                <div class="col-xl-12 dots">   <p>Технологии</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Гуманитарные науки</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Бдительность</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Финансы</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Расследование</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Медицина</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Оккультизм</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Политика</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Естественные науки</p> </div>
+                <div class="col-xl-12 dots round-dots">   <p>Технологии</p> </div>
             </div>
         </div>
         <div class="row">
@@ -150,18 +165,18 @@
         </div>
         <div class="row">
             <div class="col-xl-6">
-                <div class="col-xl-12 dots">     <p>Анимализм</p> </div>
-                <div class="col-xl-12 dots">    <p>Ясновидение</p> </div>
-                <div class="col-xl-12 dots">    <p>Стремительность</p> </div>
-                <div class="col-xl-12 dots">    <p>Доминирование</p> </div>
-                <div class="col-xl-12 dots">    <p>Стойкость</p> </div>
+                <div class="col-xl-12 dots round-dots">     <p>Анимализм</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Ясновидение</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Стремительность</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Доминирование</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Стойкость</p> </div>
             </div>
             <div class="col-xl-6">
-                <div class="col-xl-12 dots">    <p>Затемнение</p> </div>
-                <div class="col-xl-12 dots">    <p>Мощь</p> </div>
-                <div class="col-xl-12 dots">    <p>Присутствие</p> </div>
-                <div class="col-xl-12 dots">    <p>Превращение</p> </div>
-                <div class="col-xl-12 dots">    <p>Магия крови</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Затемнение</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Мощь</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Присутствие</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Превращение</p> </div>
+                <div class="col-xl-12 dots round-dots">    <p>Магия крови</p> </div>
             </div>
         </div>
     </div>
@@ -179,15 +194,41 @@
             var data = attributes.innerHTML.split(': ');
             attributes.innerHTML = `${data[0]}: ${sum} опыта вложено`
         }
+        function update_stat_count(id_, value) {
+            const stat_dots = document.getElementById(id_ + '_dots').childNodes;
+            for(var i = 0; i < stat_dots.length; i++)
+            {
+                stat_dots[i].checked = value > i;
+            }
+        }
 
         function update_state() {
             update_count('attributes', 5, 0, 8, 1, 95);
-            update_count('skills', 3, 9, 35, 0, 114);
+            update_count('skills', 3, 9, 35, 0, 120);
             update_count('disciplines', 5, 36, 45, 0, 20);
+            update_stat_count('health', Number(state[2])+Number(3));
+            update_stat_count('willpower', Number(state[5])+Number(state[8]));
             window.history.replaceState({}, "", `index.html?${state.join('')}`);
         }
 
-        const dots = document.getElementsByClassName("dots");
+        function create_stat_dots(id_, max) {
+            const div = document.createElement("div");
+            div.id = id_ + '_dots';
+            for(var j = 1; j <= max; j++) {
+                var input = document.createElement("input");
+                input.type = "radio";
+                input.value = j;
+                input.disabled = true;
+                input.checked = false;
+                div.appendChild(input);
+            }
+            const stat = document.getElementById(id_);
+            stat.appendChild(div);
+        }
+
+        create_stat_dots("health", 8);
+        create_stat_dots("willpower", 10);
+        const dots = document.getElementsByClassName("round-dots");
         var preloaded_state = window.location.href.split('?')[1];
         if(preloaded_state && preloaded_state.length == dots.length) {
             state = preloaded_state.split('');
